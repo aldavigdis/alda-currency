@@ -5,17 +5,22 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.alda-currency-frontend-block-container, .wp-block[data-type='aldavigdis/alda-currency'] {
+.alda-currency-frontend-block-container,
+.wp-block[data-type="aldavigdis/alda-currency"] {
+
 	tbody {
+
 		td:nth-child(2) {
 			text-align: right;
 			padding-right: 0.5em;
 		}
+
 		input {
 			text-align: right;
 			padding: 0.25em 1em;
 			appearance: textfield;
 		}
+
 		th {
 			background-size: 25px 37px;
 			background-position: 0 50%;
@@ -23,38 +28,49 @@
 			padding-left: 40px;
 			padding-right: 1em;
 		}
-		th[data-currency=EUR] {
-			background-image: url('../flags/4x3/eu.svg');
+
+		th[data-currency="EUR"] {
+			background-image: url(../flags/4x3/eu.svg);
 		}
-		th[data-currency=USD] {
-			background-image: url('../flags/4x3/us.svg');
+
+		th[data-currency="USD"] {
+			background-image: url(../flags/4x3/us.svg);
 		}
-		th[data-currency=GBP] {
-			background-image: url('../flags/4x3/gb.svg');
+
+		th[data-currency="GBP"] {
+			background-image: url(../flags/4x3/gb.svg);
 		}
-		th[data-currency=PLN] {
-			background-image: url('../flags/4x3/pl.svg');
+
+		th[data-currency="PLN"] {
+			background-image: url(../flags/4x3/pl.svg);
 		}
-		th[data-currency=DKK] {
-			background-image: url('../flags/4x3/dk.svg');
+
+		th[data-currency="DKK"] {
+			background-image: url(../flags/4x3/dk.svg);
 		}
-		th[data-currency=NOK] {
-			background-image: url('../flags/4x3/no.svg');
+
+		th[data-currency="NOK"] {
+			background-image: url(../flags/4x3/no.svg);
 		}
-		th[data-currency=SEK] {
-			background-image: url('../flags/4x3/se.svg');
+
+		th[data-currency="SEK"] {
+			background-image: url(../flags/4x3/se.svg);
 		}
-		th[data-currency=CHF] {
-			background-image: url('../flags/4x3/ch.svg');
+
+		th[data-currency="CHF"] {
+			background-image: url(../flags/4x3/ch.svg);
 		}
-		th[data-currency=CAD] {
-			background-image: url('../flags/4x3/ca.svg');
+
+		th[data-currency="CAD"] {
+			background-image: url(../flags/4x3/ca.svg);
 		}
-		th[data-currency=ISK] {
-			background-image: url('../flags/4x3/is.svg');
+
+		th[data-currency="ISK"] {
+			background-image: url(../flags/4x3/is.svg);
 		}
-		th[data-currency=JPY] {
-			background-image: url('../flags/4x3/jp.svg');
+
+		th[data-currency="JPY"] {
+			background-image: url(../flags/4x3/jp.svg);
 		}
 	}
 }
