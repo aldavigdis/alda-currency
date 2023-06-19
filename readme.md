@@ -28,6 +28,11 @@ npm npm run plugin-zip
 This creates `alda-currency.zip` in the root directory of the project that can
 be used.
 
+## TODOs
+
+* Sanitize values before they are entered using a POST request to the JSON API.
+* Introduce translations/localizations.
+
 ## Licence
 
-This software is realeased under the GPL-2.0 licence.
+This software is realeased under the GPL-3.0 licence.
