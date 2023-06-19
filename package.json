@@ -24,10 +24,18 @@
 		"@babel/core": "^7.22.5",
 		"@babel/preset-env": "^7.22.5",
 		"@babel/preset-react": "^7.22.5",
+		"@wordpress/eslint-plugin": "^14.8.0",
 		"@wordpress/scripts": "^26.6.0"
 	},
 	"dependencies": {
 		"flag-icons": "^6.7.0"
 	},
-	"files": [ "readme.txt", "alda-currency.php", "views", "build", "flags", "assets" ]
+	"files": [
+		"readme.txt",
+		"alda-currency.php",
+		"views",
+		"build",
+		"flags",
+		"assets"
+	]
 }
