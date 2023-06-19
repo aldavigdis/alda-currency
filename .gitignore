@@ -34,3 +34,5 @@ build/*
 
 # We don't need to include the flags in the original repo
 flags
+
+/vendor/

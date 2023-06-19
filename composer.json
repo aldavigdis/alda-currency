@@ -1,0 +1,23 @@
+{
+    "name": "aldavigdis/alda-currency",
+    "description": "Automatically convert between currencies from an interactive block",
+    "type": "wordpress-plugin",
+    "require-dev": {
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "wp-coding-standards/wpcs": "^2.3"
+    },
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Alda Vigdís",
+            "email": "aldavigdis@aldavigdis.is"
+        }
+    ],
+    "require": {},
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
