@@ -10,10 +10,10 @@ This project uses a couple of npm packages and scripts to get things going:
 ```bash
 npm install
 npm wp-scripts build
-npm build-admin-css
-npm build-admin-js
-npm build-frontend-component
-npm build-frontend-module
+npm run build-admin-css
+npm run build-admin-js
+npm run build-frontend-component
+npm run build-frontend-module
 ```
 
 ## Release
