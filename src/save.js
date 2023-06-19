@@ -19,7 +19,7 @@ export default function save() {
 	return (
 		<div
 			{ ...useBlockProps.save() }
-			className="alda-currency-frontend-block-container">
-		</div>
+			className="alda-currency-frontend-block-container"
+		></div>
 	);
 }
