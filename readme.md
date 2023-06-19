@@ -38,7 +38,7 @@ Given than you haven't added new files that need to be included in a zip archive
 for release, you can run the automatic process for that:
 
 ```bash
-npm npm run plugin-zip
+npm run plugin-zip
 ```
 
 This creates `alda-currency.zip` in the root directory of the project that can
