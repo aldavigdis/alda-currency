@@ -1,0 +1,30 @@
+#alda-currency-rates-form {
+	table {
+		width: 33em;
+	}
+	tbody {
+		td:nth-child(1) {
+			width: 40px;
+		}
+		th:nth-child(2) {
+			width: 3em;
+			text-align: center;
+			padding-bottom: 0.8em;
+		}
+		td:nth-child(3) {
+			width: 7em;
+		}
+		td:nth-child(4) {
+			text-align: center;
+		}
+		img {
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		input[type=number] {
+			width: 6em;
+			text-align: right;
+			appearance: textfield;
+		}
+	}
+}
