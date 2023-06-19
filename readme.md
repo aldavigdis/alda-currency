@@ -22,6 +22,16 @@ npm run build-frontend-component
 npm run build-frontend-module
 ```
 
+The code is manually linted using PHPCodeSniffer as well as eslint:
+
+```bash
+npx eslint /path/to/js/file.js
+./vendor/bin/phpcs /path/to/php/file.php --standard=WordPress
+./vendor/bin/phpcs /path/to/php/file.php--standard=PHPCompatibilityWP --runtime-set testVersion 8.2-
+```
+
+We allow for some errors here, but please don't add more errors to the codebase.
+
 ## Release
 
 Given than you haven't added new files that need to be included in a zip archive
