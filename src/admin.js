@@ -64,9 +64,12 @@ class AldaCurrencySettings {
 		let request = new XMLHttpRequest();
 
 		request.open( 'POST', endpointUrl, true );
+
 		request.setRequestHeader(
 			'Content-Type', 'application/json;charset=UTF-8'
 		);
+
+		request.setRequestHeader( 'X-WP-Nonce', wpApiSettings.nonce );
 
 		request.send(
 			JSON.stringify( { 'currency_code': currency_code } )
@@ -133,9 +136,12 @@ class AldaCurrencyRates {
 		let request = new XMLHttpRequest();
 
 		request.open( 'POST', endpointUrl, true );
+
 		request.setRequestHeader(
 			'Content-Type', 'application/json;charset=UTF-8'
 		);
+
+		request.setRequestHeader( 'X-WP-Nonce', wpApiSettings.nonce );
 
 		request.send(
 			JSON.stringify( requestBody )
