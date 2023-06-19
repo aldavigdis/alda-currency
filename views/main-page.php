@@ -1,8 +1,15 @@
 <?php
-$alda_currency = new AldaCurrency();
-$base_currency = $alda_currency->get_base_currency();
+
+/**
+ * The main admin view for Alda Currency
+ *
+ * @package alda-currency
+ */
+
+$alda_currency      = new AldaCurrency();
+$base_currency      = $alda_currency->get_base_currency();
 $enabled_currencies = $alda_currency->enabled_currencies();
-$currency_rates = $alda_currency->rates();
+$currency_rates     = $alda_currency->rates();
 ?>
 
 <div>
@@ -50,7 +57,7 @@ $currency_rates = $alda_currency->rates();
 					<tr>
 						<td>
 							<img
-								src="<?php echo $alda_currency->currency_flag($c) ?>"
+								src="<?php echo esc_attr( $alda_currency->currency_flag( $c ) ); ?>"
 								width="40"
 								height="30"
 							/>
@@ -60,27 +67,27 @@ $currency_rates = $alda_currency->rates();
 							scope="row"
 						>
 							<span class="row-title">
-								<?php echo $c ?>
+								<?php echo esc_html( $c ); ?>
 							</span>
 						</th>
 						<td>
 							<input
 								class="currency-rate"
 								type="number"
-								name="<?php echo esc_attr($c) ?>"
+								name="<?php echo esc_attr( $c ); ?>"
 								step="0.01"
-								value="<?php echo $currency_rates[$c]; ?>"
+								value="<?php echo esc_attr( $currency_rates[ $c ] ); ?>"
 							/>
 						</td>
 						<td>
 							<label>
 								<input
 									type="checkbox"
-									name="<?php echo $c . '_enabled' ?>"
+									name="<?php echo esc_attr( $c . '_enabled' ); ?>"
 									<?php if ( in_array( $c, $enabled_currencies, true ) ) : ?>
 									checked
 									<?php endif ?>
-									data-currency="<?php echo $c ?>"
+									data-currency="<?php echo esc_attr( $c ); ?>"
 								>
 							</label>
 						</td>
@@ -110,11 +117,11 @@ $currency_rates = $alda_currency->rates();
 							<select name="base_currency">
 								<?php foreach ( $alda_currency::CURRENCIES as $c ) : ?>
 									<option
-										value="<?php echo $c ?>"
-										<?php if ( $c == $base_currency ) : ?>
+										value="<?php echo esc_attr( $c ); ?>"
+										<?php if ( $c === $base_currency ) : ?>
 											selected
 										<?php endif ?>
-									><?php echo $c ?></option>
+									><?php echo esc_html( $c ); ?></option>
 								<?php endforeach ?>
 							</select>
 						</td>
