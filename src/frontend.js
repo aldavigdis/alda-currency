@@ -8,7 +8,9 @@ const containers = document.querySelectorAll(
 
 // Assign a root and create a CurrencyConverter component in every DOM element
 // matching the query selector.
-containers.forEach(function (container) {
-	let currency_converter_root = ReactDOM.createRoot(container);
-  currency_converter_root.render(React.createElement(CurrencyConverter, null));
-});
+containers.forEach( function ( container ) {
+	const currencyConverterRoot = ReactDOM.createRoot( container );
+	currencyConverterRoot.render(
+		React.createElement( CurrencyConverter, null )
+	);
+} );
