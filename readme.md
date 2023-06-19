@@ -3,6 +3,12 @@
 This plugin provides a simple interactive currency conversion block that can be
 inserted into your posts, pages and your WordPress FSE layout.
 
+## Screenshots
+
+<img src="assets/screenshot-1.png" width="500" alt="The block visible in the block editor"/>
+
+<img src="assets/screenshot-3.png" width="500" alt="The admin interface"/>
+
 ## Develop and Build
 
 This project uses a couple of npm packages and scripts to get things going:
