@@ -37,6 +37,7 @@ be used.
 ## TODOs
 
 * Sanitize values before they are entered using a POST request to the JSON API.
+* Add and improve error handling
 * Introduce translations/localizations.
 
 ## Licence
